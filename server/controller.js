@@ -10,4 +10,13 @@ module.exports = {
     //             console.log(err)
     //         });
     // },
+
+    get_inventory:  function(req, res) {
+        req.app.get('db').get_inventory();
+        console.log('somehting')
+    },
+
+    post_inventory: function(req, res) {
+
+    }
 }
